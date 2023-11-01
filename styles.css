@@ -1,14 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #fde6e6; /* Light pink background */
     text-align: center;
 }
 
 h1 {
-    color: #333;
+    color: #ff66b2; /* Dark pink for headings */
 }
 
 p {
     font-size: 18px;
-    color: #666;
+    color: #ff3399; /* A slightly lighter shade of pink for text */
 }
