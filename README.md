@@ -1,56 +1,63 @@
-## Getting Started
+# Unburns.com Project
 
-We provide a sample app using HTML that you can deploy on App Platform. These steps will get this sample application running for you using App Platform.
+Welcome to the GitHub repository for [Unburns.com](https://www.unburns.com), the personal website of Natalie Burns. This project encompasses the code and resources used to create and maintain the website, hosted on DigitalOcean and registered through Namecheap.
 
-**Note: Following these steps may result in charges for the use of DigitalOcean services.**
+## Overview
 
-### Requirements
+Unburns.com is a portfolio and blogging platform designed to showcase my professional work and personal musings. The site is built with modern web technologies and designed to be responsive and accessible.
 
-* You need a DigitalOcean account. If you don't already have one, you can sign up at https://cloud.digitalocean.com/registrations/new.
+## Features
 
-## Deploying the App
+- **Permanent Redirect**: The naked domain `unburns.com` uses `pizza.redirect` to permanently redirect to `https://www.unburns.com`, ensuring consistency and search engine optimization.
 
-Click this button to deploy the app to the DigitalOcean App Platform. If you are not logged in, you will be prompted to log in with your DigitalOcean account.
+- **DNS Management**: DNS is managed at 
 
-[![Deploy to DigitalOcean](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/digitalocean/sample-html/tree/main)
+    - `NS1.digitalocean.com`, 
+    - `NS2.digitalocean.com`, 
+    - `NS3.digitalocean.com`, 
+    
+    providing reliable and scalable domain name resolution.
 
-Using this button disables the ability to automatically re-deploy your app when pushing to a branch or tag in your repository as you are using this repo directly.
+- **Development Environment**: Code is written and maintained using Visual Studio Code, a powerful and versatile code editor.
 
-If you want to automatically re-deploy your app, [fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) the GitHub repository to your account so that you have a copy of it stored to the cloud. Click the **Fork** button in the GitHub repository and follow the on-screen instructions.
+## Prerequisites
 
-After forking the repo, you should now be viewing this README in your own GitHub org (e.g. `https://github.com/<your-org>/sample-html`). To deploy the new repo, visit https://cloud.digitalocean.com/apps and click **Create App**. Then, click **GitHub**, select the repository you created and select the `main` branch. App Platform will inspect the code, automatically detect the kind of component to create, and use the correct buildpack to create and deploy a container.
+Before you begin, ensure you have the following installed on your system:
+- Git (for version control)
+- Visual Studio Code (or your preferred IDE)
 
-After clicking the **Deploy to DigitalOcean** button or completing the instructions above to fork the repo, follow these steps:
+## Local Development
 
-1. Configure the app such as specifying HTTP routes, environment variables or adding a database.
-1. Provide a name for your app and select which region you want to deploy your app to and click **Next**. The closest region to you should be selected by default. All App Platform apps are routed through a global CDN. So this will not affect your app performance, unless it needs to talk to external services.
-1. On the following screen, leave all the fields as they are and click **Next**.
-1. Confirm your **Plan** settings and how many containers you want to launch and click **Launch Basic/Pro App**.
-1. You should see a "Building..." progress indicator. You can click **View Logs** to see more details of the build.
-1. It can take a few minutes for the build to finish, but you can follow the progress in the **Deployments** tab.
-1. Once the build completes successfully, click the **Live App** link in the header and you should see your running application in a new tab, displaying the home page.
+To set up the project for local development:
 
-### Making Changes to Your App
+1. Use Command + Space and search for 'code' to open Visual Studio Code.
+2. Use Command + Space and search for 'terminal' 
+3. Clone the repository by running the following command:
+```
+git clone https://github.com/NatalieBurns/sample-steve
+```
+4. Once cloned, navigate into the project directory:
+```
+cd path/to/unburns.com
+```
 
-If you followed the steps to fork the repo and used your own copy when deploying the app, you can push changes to your fork and see App Platform automatically re-deploy the update to your app. During these automatic deployments, your application will never pause or stop serving request because App Platform offers zero-downtime deployments.
+5. Use `Command + Shift + P` in Visual Studio Code to open the command palette, where you can run tasks, view settings, and access various features of the IDE.
 
-Here's an example code change you can make for this app:
+## Deployment
 
-1. Edit code within the repository
-1. Commit the change to the `main` branch. Normally it's a better practice to create a new branch for your change and then merge that branch to `main` after review, but for this demo you can commit to the `main` branch directly.
-1. Visit https://cloud.digitalocean.com/apps and navigate to your sample app.
-1. You should see a "Building..." progress indicator, just like when you first created the app.
-1. Once the build completes successfully, click the **Live App** link in the header and you should see your updated application running. You may need to force refresh the page in your browser (e.g. using **Shift+Reload**).
+The website is hosted on DigitalOcean. Changes pushed to the main branch of this repository should be deployed through a continuous deployment pipeline or manual deployment process as configured.
 
-### Learn More
 
-You can learn more about the App Platform and how to manage and update your application at https://www.digitalocean.com/docs/app-platform/.
+## Contact
 
-## Deleting the App
+Natalie Burns
 
-When you no longer need this sample application running live, you can delete it by following these steps:
-1. Visit the Apps control panel at https://cloud.digitalocean.com/apps.
-2. Navigate to the sample app.
-3. In the **Settings** tab, click **Destroy**.
+Project Link: [https://github.com/NatalieBurns/sample-steve](https://github.com/NatalieBurns/sample-steve)
 
-**Note: If you do not delete your app, charges for using DigitalOcean services will continue to accrue.**
+## Acknowledgments
+
+- DigitalOcean for hosting services.
+- Namecheap for domain registration.
+- The open-source projects and libraries that make this site possible.
+
+Thank you for visiting my project repository!
