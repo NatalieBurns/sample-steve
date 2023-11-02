@@ -13,3 +13,68 @@ p {
     font-size: 18px;
     color: #ff3399; /* A slightly lighter shade of pink for text */
 }
+
+#something {
+    background: rgb(216, 138, 234);
+}
+
+.shiny {
+    padding: .1em;
+    color: rgb(132, 0, 255);
+    background: rgb(233, 197, 197);
+}
+
+.top-left-clock {
+    position: absolute;
+    top: 10px; /* Adjust the value to suit your needs */
+    left: 10px; /* Adjust the value to suit your needs */
+    font-size: 18px; /* Adjust the size as you like */
+    font-family: 'Arial', sans-serif; /* Choose a font that fits your site's design */
+  }
+
+  .debug {
+    border:1px solid red;
+  }
+
+  #weather-widget {
+    background-color: #f8ecf9; /* Soft purple background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    max-width: 300px;
+    margin: 60px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+  
+  #weather-widget:hover {
+    background: #000000; 
+  }
+
+  #weather-widget:hover h2 {
+    color: white
+  }
+
+  #weather-widget h2:hover {
+    color: yellow;
+  }
+
+  #weather-widget h2 {
+    color: #ff66b2; /* Pink color for the headings */
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  #weather-widget p {
+    color: #6d3791; /* Purple text color for a better contrast */
+    font-size: 16px; /* Readable font size */
+    line-height: 1.5; /* Spacing for legibility */
+  }
+  
+  #weather-widget strong {
+    color: #9c4d99; /* A darker shade for emphasis */
+  }
+  
+  #weather-widget span {
+    color: #cc7ab8; /* A soft pink for content */
+    font-weight: bold; /* Make the spans stand out */
+  }
+  
