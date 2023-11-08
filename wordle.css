@@ -1,4 +1,10 @@
+#wordle-container {
+    margin-bottom: 40px;
+}
+
 #game-board {
+    margin: 0px auto 20px;
+    width: 270px;
     display: grid;
     grid-template-columns: repeat(5, 50px);
     grid-gap: 5px;

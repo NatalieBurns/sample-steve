@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="wordle.css">
     <link rel="stylesheet" type="text/css" href="feedbackstyling.css">
     <title>My Website</title>
 </head>
@@ -20,6 +21,13 @@
         <p><strong>Location:</strong> <span id="location">Englewood</span></p>
         <p><strong>Temperature:</strong> <span id="temperature"></span></p>
         <p><strong>Description:</strong> <span id="description"></span></p>
+    </div>
+
+    <div id="wordle-container">
+        <h2>Play Wordle!</h2>
+        <div id="game-board"></div>
+        <input type="text" id="guess-input" maxlength="5" autocomplete="off">
+        <button onclick="submitGuess()">Guess</button>
     </div>
 
     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mzblwddd"
@@ -40,6 +48,7 @@
     <div id="clock" class="top-left-clock"></div>
     <script src="weather.js"></script>
     <script src="clock.js"></script>
+    <script src="wordle.js"></script>
 
 </body>
 

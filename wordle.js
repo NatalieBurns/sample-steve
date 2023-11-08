@@ -1,4 +1,12 @@
-const wordList = ['apple', 'grape', 'berry', 'peach', 'melon', 'lemon', 'olive', 'prune', 'mango'];
+const wordList = [
+    'flour', 'sugar', 'yeast', 'bread', 'cakes', 'mints', 'dough', 'sweet', 'fudge',
+    'icing', 'cocoa', 'scone', 'bakes', 'crust', 'spice', 'chips', 'glaze', 'fruit',
+    'candy', 'feast', 'snack', 'whisk', 'blend', 'frost', 'syrup', 'slice', 'layer',
+    'creme', 'tarts', 'puffs', 'batch', 'sifts', 'spoon', 'whips', 'chill', 'rolls',
+    'piecr', 'torte', 'baked', 'cools', 'dusty', 'panes', 'mixes', 'froth', 'merry',
+    'angel', 'bells', 'chime', 'elfin', 'trays', 'treat'
+  ];
+  
 const secretWord = wordList[Math.floor(Math.random() * wordList.length)];
 const gameBoard = document.getElementById('game-board');
 
