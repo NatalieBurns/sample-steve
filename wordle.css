@@ -1,0 +1,27 @@
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-gap: 5px;
+}
+
+#game-board .tile {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.correct {
+    background-color: green;
+}
+
+.present {
+    background-color: yellow;
+}
+
+.absent {
+    background-color: grey;
+}
