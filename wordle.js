@@ -24,7 +24,7 @@ function submitGuess() {
     const guess = guessInput.value.toLowerCase();
     
     // Input validation
-    if (guess.length !== 5 || !wordList.includes(guess)) {
+    if (guess.length !== 5) {
         alert('Invalid guess or word not in list.');
         return;
     }
